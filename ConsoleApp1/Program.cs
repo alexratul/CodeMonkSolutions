@@ -1,4 +1,5 @@
 ﻿using System;
+using ConsoleApp1.CustomLibraries.BinarySearch;
 using ConsoleApp1.CustomLibraries.LinearSearch;
 
 namespace ConsoleApp1
@@ -23,7 +24,10 @@ namespace ConsoleApp1
             //new Strings().sortedSubString();
 
             /*Linear search*/
-            new LinearSearch().lastOcurrence();
+            //new LinearSearch().lastOcurrence();
+
+            /*Binary search*/
+            new BinarySearch().binarysearch();
 
             Console.ReadKey();
         }

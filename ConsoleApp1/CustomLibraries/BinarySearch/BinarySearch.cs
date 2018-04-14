@@ -6,6 +6,31 @@ namespace ConsoleApp1.CustomLibraries.BinarySearch
 {
     class BinarySearch
     {
+
+        int binarySearch(int low, int high, int key, String[] array)
+        {
+            while (low <= high)
+            {
+                int mid = (low + high) / 2;
+                if (Int32.Parse(array[mid]) < key)
+                {
+                    low = mid + 1;
+                }
+                else if (Int32.Parse(array[mid]) > key)
+                {
+                    high = mid - 1;
+                }
+                else
+                {
+                    return mid;
+                }
+
+            }
+
+
+            return -1;
+        }
+
         public void binarysearch()
         {
 
@@ -25,7 +50,19 @@ namespace ConsoleApp1.CustomLibraries.BinarySearch
                     /*call the function that is going to deliver his position on the vector*/
                     int low  = 0;
                     int high = size - 1;
+                    int key = Int32.Parse(Console.ReadLine());
 
+                    int result = binarySearch(low, high, key, array);
+
+                    if (result < 0)
+                    {
+                        Console.WriteLine("Error key not found");
+                    }
+
+                    else
+                    {
+                        Console.WriteLine(result + 1);
+                    }
 
                 }
 
