@@ -1,5 +1,5 @@
 ﻿using System;
-using ConsoleApp1.CustomLibraries;
+using ConsoleApp1.CustomLibraries.LinearSearch;
 
 namespace ConsoleApp1
 {
@@ -7,7 +7,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-           // Console.WriteLine("Hello World!");
+            // Console.WriteLine("Hello World!");
 
             //new BasicStuff().reversePrintingArray();
 
@@ -20,7 +20,10 @@ namespace ConsoleApp1
             */
 
             /*String stuff*/
-            new Strings().sortedSubString();
+            //new Strings().sortedSubString();
+
+            /*Linear search*/
+            new LinearSearch().lastOcurrence();
 
             Console.ReadKey();
         }
