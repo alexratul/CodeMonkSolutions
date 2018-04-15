@@ -2,6 +2,7 @@
 using ConsoleApp1.CustomLibraries.BinarySearch;
 using ConsoleApp1.CustomLibraries.LinearSearch;
 using ConsoleApp1.CustomLibraries.TernarySearch;
+using ConsoleApp1.CustomLibraries.BasicNumberTheory;
 
 namespace ConsoleApp1
 {
@@ -31,7 +32,10 @@ namespace ConsoleApp1
             //new BinarySearch().binarysearch();
 
             /*TernarySearch*/
-            new TernarySearch().findingMimo();
+            //new TernarySearch().findingMimo();
+
+            /*Number Theory*/
+            new BasicNumberTheory().allprimeNumbers();
 
 
             Console.ReadKey();
