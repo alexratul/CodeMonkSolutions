@@ -1,6 +1,7 @@
 ﻿using System;
 using ConsoleApp1.CustomLibraries.BinarySearch;
 using ConsoleApp1.CustomLibraries.LinearSearch;
+using ConsoleApp1.CustomLibraries.TernarySearch;
 
 namespace ConsoleApp1
 {
@@ -27,7 +28,11 @@ namespace ConsoleApp1
             //new LinearSearch().lastOcurrence();
 
             /*Binary search*/
-            new BinarySearch().binarysearch();
+            //new BinarySearch().binarysearch();
+
+            /*TernarySearch*/
+            new TernarySearch().findingMimo();
+
 
             Console.ReadKey();
         }
